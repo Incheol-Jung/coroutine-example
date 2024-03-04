@@ -11,3 +11,13 @@ I
 src/main/kotlin/Chap03.kt,2/6/26c9206112e59983d7b11705147ffb36888603ef
 I
 src/main/kotlin/Chap04.kt,1/0/10274124b5890f8ff080998d0a06e192b77cb3f9
+I
+src/main/kotlin/chap10.kt,8/5/858fd347cda31e0428aeb57be3209a170fa854df
+I
+src/main/kotlin/chap11.kt,e/b/eba640ef10963cc5eb1f509b1ddf7d00841e4bcf
+K
+src/main/kotlin/chap10-1.kt,d/1/d1ade752204e50c7d36384be4fb3e482d03ff6cc
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
