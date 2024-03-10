@@ -19,7 +19,8 @@ class Page115 {
                 delay(2000)
                 println("222")
             }
-        }.join()
+        }
+        delay(3000)
         println("done")
     }
 }
