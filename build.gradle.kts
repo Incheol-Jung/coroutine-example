@@ -8,6 +8,7 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -15,7 +16,8 @@ dependencies {
     testImplementation("org.jetbrains.kotlin", "kotlin-test-junit5", "1.3.72")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test-jvm:1.6.0")
-
+// build.gradle / build.gradle.kts
+    implementation("com.github.MarcinMoskala.kotlin-coroutines-recipes:kotlin-coroutines-recipes:0.1.7")
 }
 
 tasks.test {

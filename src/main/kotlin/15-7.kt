@@ -10,7 +10,7 @@ import kotlinx.coroutines.test.StandardTestDispatcher
  */
 fun main() {
 
-    val launch = coroutineScope {
-        println("test")
-    }
+//    val launch = coroutineScope {
+//        println("test")
+//    }
 }
