@@ -95,7 +95,5 @@ K
 src/main/kotlin/Chap17-4.kt,e/4/e46206f9dad70d95ee4624da29374281e84f207a
 K
 src/main/kotlin/Chap17-5.kt,7/5/757997843e9a59c20501ecb23b4783479dfca3c0
-A
-notion/chap16.txt,2/c/2cc25cebd145eb8dc8c02e070ee35bf54f4d7ade
 @
 notion/chap16.md,4/4/44384ca36fef47e8f905ee1ed72269c86dd60130

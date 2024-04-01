@@ -14,6 +14,7 @@ suspend fun askMultipleForData2(): String = coroutineScope {
         async { requestData1() }.onAwait { it }
         async { requestData2() }.onAwait { it }
     }
+    // .also { coroutineContext.cancelChildren() }
 }
 
 suspend fun main(): Unit = coroutineScope {
