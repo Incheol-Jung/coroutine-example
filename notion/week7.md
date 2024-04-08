@@ -5,16 +5,16 @@
 ```jsx
 List<Integer> list = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9,10));
 List<Integer> filterList = list.stream()
-																.filter(d -> {
-																	System.out.println("filtering" + d.toString());
-																	return d.intValue() < 5;
-																})
-																.map(d -> {
-																	System.out.println("mapping" + d.toString());
-																	return d;
-																})
-																.limit(3)
-																.collect(Collectors.toList());
+	.filter(d -> {
+		System.out.println("filtering" + d.toString());
+		return d.intValue() < 5;
+	})
+	.map(d -> {
+		System.out.println("mapping" + d.toString());
+		return d;
+	})
+	.limit(3)
+	.collect(Collectors.toList());
 ```
 
 > stream 내용이 나와서 위의 코드는 어떻게 동작하며 print는 어떻게 찍힐까? 
