@@ -9,7 +9,7 @@ interface Cancellable {
 }
 
 suspend fun requestNews(): News {
-    return suspendCancellableCoroutine<News> { cont ->
+    return suspendCancellableCoroutine { cont ->
         val call = requestNewsApi { news ->
             cont.resume(news)
         }
