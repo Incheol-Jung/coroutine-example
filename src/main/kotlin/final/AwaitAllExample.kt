@@ -17,13 +17,13 @@ suspend fun fetchAsyncData(message: String): String {
 }
 
 fun main() = runBlocking {
-    val defrredResults = listOf(
+    val defferedResults = listOf(
         async { fetchAsyncData("example 1") },
         async { fetchAsyncData("example 2") },
         async { fetchAsyncData("example 3") }
     )
     val times = measureTimedValue {
-        val results = awaitAll(*defrredResults.toTypedArray())
+        val results = awaitAll(*defferedResults.toTypedArray())
         results.forEachIndexed { index, result ->
             println("${index} 결과 : $result")
         }
