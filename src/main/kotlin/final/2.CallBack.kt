@@ -51,6 +51,6 @@ fun main() = runBlocking {
     }
 
     delay(1000) // 1초 대기
-    job.join() // 요청 취소
+    job.join() // 요청 종료
 }
 

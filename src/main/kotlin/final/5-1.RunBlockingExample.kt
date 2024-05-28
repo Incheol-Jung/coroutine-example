@@ -1,8 +1,6 @@
 package final
 
-import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 import kotlin.time.measureTimedValue
 
 /**
@@ -13,7 +11,7 @@ import kotlin.time.measureTimedValue
 class RunBlockingExample {
     private suspend fun getNumbers(): List<Int> {
         delay(1000)
-        return listOf(1,2,3,4,5)
+        return listOf(1, 2, 3, 4, 5)
     }
 
     fun calculate() {
@@ -28,7 +26,20 @@ class RunBlockingExample {
     }
 }
 
-fun main() {
-    val example = RunBlockingExample()
-    example.calculate()
+class DiscSaveRepository {
+    suspend fun loadSave(name: String): String {
+        val temp = withContext(Dispatchers.IO){
+            toUpperCase(name)
+        }
+        return temp
+    }
+
+    fun toUpperCase(name: String): String {
+        return name.uppercase()
+    }
+}
+suspend fun main() {
+    val example = DiscSaveRepository()
+    val result = example.loadSave("test")
+    println(result)
 }
