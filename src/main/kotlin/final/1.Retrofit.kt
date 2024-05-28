@@ -2,13 +2,12 @@ package final
 
 import com.google.gson.GsonBuilder
 import kotlinx.coroutines.async
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Path
-import kotlin.system.measureTimeMillis
+import kotlin.time.measureTimedValue
 
 /**
  *
@@ -36,7 +35,7 @@ data class BaseBallInfo(
 fun main(): Unit = runBlocking {
     val sampleApi = sampleApi()
 
-    val elapsed: Long = measureTimeMillis {
+    val elapsed = measureTimedValue {
         runBlocking {
             val async1 = async { sampleApi.getBaseBallInfos("baseball") }
             val async2 = async { sampleApi.getBaseBallInfos("baseball") }
@@ -44,7 +43,7 @@ fun main(): Unit = runBlocking {
         }
     }
 
-//    val elapsed: Long = measureTimeMillis {
+//    val elapsed = measureTimedValue {
 //        val result = sampleApi.getBaseBallInfos("baseball")
 //        val result2 = sampleApi.getBaseBallInfos("baseball")
 //    }

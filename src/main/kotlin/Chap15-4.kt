@@ -3,7 +3,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.test.StandardTestDispatcher
 import kotlin.random.Random
-import kotlin.system.measureTimeMillis
+import kotlin.time.measureTimedValue
 
 /**
  *
@@ -20,7 +20,7 @@ fun main() {
 
     Thread.sleep(Random.nextLong(2000))
 
-    val time = measureTimeMillis {
+    val time = measureTimedValue {
         println("[${dispatcher.scheduler.currentTime}] Before")
 //        dispatcher.scheduler.advanceUntilIdle()
         println("[${dispatcher.scheduler.currentTime}] After")

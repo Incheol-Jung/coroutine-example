@@ -2,6 +2,7 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import kotlin.system.measureTimeMillis
+import kotlin.time.measureTimedValue
 
 /**
  *
@@ -9,7 +10,7 @@ import kotlin.system.measureTimeMillis
  * @since 2023. 10. 02.
  */
 fun main() = runBlocking {
-    val time = measureTimeMillis {
+    val time = measureTimedValue {
         val job1 = async { apiCall1() }
         val job2 = async { apiCall2() }
         printWithThread((job1.await() + job2.await()).toString())
