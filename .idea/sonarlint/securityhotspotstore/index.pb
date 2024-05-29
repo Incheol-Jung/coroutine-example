@@ -136,3 +136,7 @@ R
 "src/main/kotlin/final/14.raceOf.kt,a/e/aeb7a714f02a912319d0512c4d734c2414ee37b5
 Q
 !src/main/kotlin/final/15.retry.kt,0/7/0721dad60e73ccccfc7059af4caff78bc3378a5b
+R
+"src/main/kotlin/final/retryWhen.kt,a/5/a51da8477c3bf467ec5d79df1084110f8d7dcf25
+U
+%src/main/kotlin/final/16.retryWhen.kt,c/b/cbed21a13069858fa9689ff23e76ba2f17b7efd4
