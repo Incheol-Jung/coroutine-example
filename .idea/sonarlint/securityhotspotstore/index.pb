@@ -134,3 +134,5 @@ Z
 *src/main/kotlin/final/13.ConnectionPool.kt,1/3/13b3c68e97511f3dc290dcfff45d216bbba3bade
 R
 "src/main/kotlin/final/14.raceOf.kt,a/e/aeb7a714f02a912319d0512c4d734c2414ee37b5
+Q
+!src/main/kotlin/final/15.retry.kt,0/7/0721dad60e73ccccfc7059af4caff78bc3378a5b
