@@ -130,3 +130,7 @@ T
 $src/main/kotlin/final/11.MapAsync.kt,2/9/29197267438aadfc7747b5c055e779febed5d2df
 S
 #src/main/kotlin/final/12.FlatMap.kt,1/3/136d5f522b6c9068cdc0c3ad13d578bf5950afba
+Z
+*src/main/kotlin/final/13.ConnectionPool.kt,1/3/13b3c68e97511f3dc290dcfff45d216bbba3bade
+R
+"src/main/kotlin/final/14.raceOf.kt,a/e/aeb7a714f02a912319d0512c4d734c2414ee37b5
