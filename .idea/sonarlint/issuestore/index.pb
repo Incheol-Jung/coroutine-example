@@ -122,3 +122,9 @@ Z
 .src/main/kotlin/final/8.FlatmapMergeExample.kt,b/a/ba276bf2f5ebcc73a19097f326db82aade5c6899
 _
 /src/main/kotlin/final/5-1.RunBlockingExample.kt,a/8/a8a8a1fbaf16c01017175968e9132007f45b1169
+U
+%src/main/kotlin/final/9.FlowChange.kt,c/c/cc2d9bf4469e45fa454c22437e4561977813355b
+]
+-src/main/kotlin/final/10.SuspendController.kt,7/9/791f07870ac3596f6c39ae76055f30e351e7af1e
+T
+$src/main/kotlin/final/11.MapAsync.kt,2/9/29197267438aadfc7747b5c055e779febed5d2df

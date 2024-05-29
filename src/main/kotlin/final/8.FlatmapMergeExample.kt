@@ -27,7 +27,7 @@ data class Offer(val id: Number, val category: Category)
 
 suspend fun main() {
     val offers = getOffers(
-        listOf(
+        categories = listOf(
             Category(id = 1, name = "Blaine Lott"),
             Category(id = 2, name = "Jimmy Hunter"),
             Category(id = 3, name = "Gonzalo Foley")

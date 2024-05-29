@@ -9,22 +9,6 @@ import kotlinx.coroutines.flow.*
  * @author Incheol.Jung
  * @since 2024. 05. 19.
  */
-var sendData: (data: Int) -> Unit = { }
-var closeChannel: () -> Unit = { }
-
-fun callbackFlow(str: String): Flow<String> = callbackFlow {
-    sendData = { data ->
-        println("callback send $data")
-        trySend(str)
-    }
-    closeChannel = { close() }
-    awaitClose {
-        sendData = {}
-        closeChannel = {}
-        println("Close CallbackFlow")
-    }
-}
-
 fun main() = runBlocking {
     // 기본 Flow: 1부터 5까지의 정수를 생성
     val numberFlow = flow {
@@ -32,7 +16,7 @@ fun main() = runBlocking {
             emit(i)
             delay(500) // 0.5초 대기
         }
-    }
+    }.flowOn(Dispatchers.Default)
 
     // callbackFlow를 사용하여 문자열을 생성
     fun callbackFlowExample(str: String): Flow<String> = callbackFlow {
@@ -54,7 +38,7 @@ fun main() = runBlocking {
     }
 
     // callbackFlow 호출
-    val stringFlow = callbackFlowExample("Hello, Flow!")
+    val stringFlow = callbackFlowExample("Hello, Flow Callback!!!")
 
     // 두 개의 Flow를 결합
     val combinedFlow = channelFlow {
