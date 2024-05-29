@@ -128,3 +128,5 @@ U
 -src/main/kotlin/final/10.SuspendController.kt,7/9/791f07870ac3596f6c39ae76055f30e351e7af1e
 T
 $src/main/kotlin/final/11.MapAsync.kt,2/9/29197267438aadfc7747b5c055e779febed5d2df
+S
+#src/main/kotlin/final/12.FlatMap.kt,1/3/136d5f522b6c9068cdc0c3ad13d578bf5950afba
