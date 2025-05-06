@@ -1,8 +1,7 @@
 package final
 
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.asFlow
-import kotlinx.coroutines.flow.flatMapMerge
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.*
 import kotlin.random.Random
 
 /**
@@ -10,19 +9,22 @@ import kotlin.random.Random
  * @author Incheol.Jung
  * @since 2024. 05. 27.
  */
-fun getOffers(
+suspend fun getOffers(
     categories: List<Category>
-): Flow<Offer> = categories
+): List<Offer> = categories
     .asFlow()
-    .flatMapMerge(concurrency = 20) {
+    .flatMapMerge {
         suspend { requestOffer(it) }.asFlow()
-    }
+    }.flowOn(Dispatchers.IO)
+    .toList()
 
 fun requestOffer(category: Category): Offer {
     return Offer(id = Random.nextInt(), category = category)
 }
 
-data class Category(val id: Number, val name: String)
+data class Category(var id: Number, val name: String){
+
+}
 data class Offer(val id: Number, val category: Category)
 
 suspend fun main() {
@@ -34,7 +36,7 @@ suspend fun main() {
         )
     )
 
-    offers.collect {
+    offers.stream().forEach {
         println(it)
     }
 }

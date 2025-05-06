@@ -1,3 +1,6 @@
+import final.FetchUserUseCase
+import final.User
+import final.UserDataRepository
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals

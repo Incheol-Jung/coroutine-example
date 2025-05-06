@@ -1,7 +1,0 @@
-
-ckotlin:S6315
-"?This function returns "Deferred", but its result is never used.(üß—¨ùÿÿÿÿ8º¼«„Þ1
-]kotlin:S6315"?This function returns "Deferred", but its result is never used.(þÀ±.8º¼«„Þ1
-|kotlin:S6306
-"XUsing "SupervisorJob()" here leads to the breaking of structured concurrency principles.(üß—¨ùÿÿÿÿ8»¼«„Þ1
-|kotlin:S6306"XUsing "SupervisorJob()" here leads to the breaking of structured concurrency principles.(üß—¨ùÿÿÿÿ8¼¼«„Þ1
