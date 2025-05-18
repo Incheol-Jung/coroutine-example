@@ -5,8 +5,6 @@ S
 #.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8/8/88a9255124c95bdc913197c120a8d560edc59c8e
-W
-'src/test/kotlin/FetchUserUseCaseTest.kt,3/c/3ce0274b9c61860f6e96cb5612a09c17424c34cd
 K
 src/test/kotlin/TestTest.kt,2/6/26b65e7be02a630944ba0a71539e21f59f870dfe
 L
@@ -23,8 +21,6 @@ Q.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c
 Q.idea/sonarlint/securityhotspotstore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0,b/b/bbf202272a96de5cd6b6828ffdc55fb3ce45289c
 @
 notion/chap16.md,4/4/44384ca36fef47e8f905ee1ed72269c86dd60130
-V
-&src/test/kotlin/MessagesServiceTest.kt,0/4/04f5e3c3651d440a716e2d0abb9f12970cc6ed95
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
@@ -146,3 +142,19 @@ Q
 !src/main/kotlin/final/Chap15-6.kt,e/8/e8935384fd308a763f53c0f4099f5ee8ba94f0fd
 Q
 !src/main/kotlin/final/Chap15-1.kt,8/2/8225608cf5cd9ae7333a6d3ec691a2a766dca16f
+R
+"src/main/kotlin/loom/SimpleTest.kt,0/e/0e3183bd885c60145e6865848d3958b2a34e3da8
+C
+settings.gradle.kts,7/4/749edfcc96398253e5b3416184e95c46621da850
+A
+gradle.properties,2/a/2afbb999f001938c88fa43fc2ef52abf0f8213e4
+X
+(gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+X
+(src/main/kotlin/loom/ThreadCreateTest.kt,b/2/b2fecc7966fc9f701b6c54d1a49d82d6da5a3819
+Y
+)src/main/kotlin/loom/ThreadExecuteTest.kt,5/5/55b431b9262f585f5ce24a2e2cc6ec3c6c08a429
+g
+7src/main/kotlin/loom/ThreadExecuteTest_for_cpu_bound.kt,2/d/2dcd249007afc6735c6a19b71c3662d104f437c4
+f
+6src/main/kotlin/loom/ThreadExecuteTest_for_io_bound.kt,e/9/e90a5015c75071275fb2ef9ec4e472b8fa352b3d
